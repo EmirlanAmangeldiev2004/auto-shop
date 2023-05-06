@@ -1,0 +1,460 @@
+@import "reset";
+@import "global";
+
+$f-c: #fff;
+$btn-c: #ee8313;
+$right: #ffcc2c;
+$b-c: rgba(52, 52, 52, 0.3);
+
+.header {
+  &__menu > .container {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    justify-content: space-between;
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+  }
+  &__burger {
+    display: none;
+    width: 30px;
+    height: 23px;
+    position: relative;
+    z-index: 50;
+    justify-content: center;
+    margin-right: 40px;
+    &__span {
+      position: absolute;
+      z-index: 50;
+      width: 80%;
+      height: 2px;
+      background-color: #ffffff;
+      border-radius: 2px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__burger::before {
+    position: absolute;
+    content: "";
+    z-index: 50;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: $f-c;
+    top: 0;
+  }
+  &__burger::after {
+    position: absolute;
+    content: "";
+    z-index: 50;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: $f-c;
+    bottom: 0;
+  }
+  &__nav-btn {
+    display: flex;
+  }
+  &__nav {
+    display: flex;
+    gap: 48px;
+    margin-right: 78px;
+    align-items: center;
+  }
+  &__nav-a {
+    color: $f-c;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+  }
+  &__nav-button {
+    background-color: $btn-c;
+    color: $f-c;
+    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+  }
+}
+
+@media (max-width: 960px) {
+  .header {
+    &__nav {
+      gap: 35px;
+      margin-right: 50px;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .header {
+    &__burger {
+      display: flex;
+    }
+    &__nav {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .header {
+    &__burger {
+      margin-right: 17px;
+    }
+  }
+}
+
+.header {
+  &__main {
+    display: flex;
+    margin-top: 107px;
+  }
+  &__text {
+    position: absolute;
+    max-width: 474px;
+    margin-top: 60px;
+  }
+  &__text-h1 {
+    color: $f-c;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0.006em;
+  }
+  &__text-p {
+    margin-top: 32px;
+    color: $f-c;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    letter-spacing: -0.408px;
+  }
+  &__text-button {
+    display: flex;
+    gap: 35px;
+    margin-top: 48px;
+  }
+  &__text-btn {
+    color: $btn-c;
+    border: 1px solid $btn-c;
+    padding: 12px 24px;
+  }
+  &__text-btn:hover {
+    background-color: $btn-c;
+    color: $f-c;
+  }
+  &__text-best {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  &__box-best {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+  }
+  &__best-h2 {
+    color: $f-c;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: -0.0041em;
+  }
+  &__best-p {
+    color: $f-c;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    margin-top: 6px;
+  }
+  &__background {
+    width: 681px;
+    height: 524px;
+    background: $b-c;
+  }
+  &__image {
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media (max-width: 1210px) {
+  .header {
+    &__text {
+      position: unset;
+    }
+    &__background {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .header {
+    &__background {
+      position: absolute;
+      right: 0;
+      width: 581px;
+      height: 424px;
+    }
+    &__image {
+      width: 781px;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .header {
+    &__background {
+      position: absolute;
+      right: 0;
+      width: 481px;
+      height: 324px;
+    }
+    &__image {
+      width: 681px;
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .header {
+    &__background {
+      position: absolute;
+      right: 0;
+      width: 400px;
+      height: 224px;
+    }
+    &__image {
+      width: 581px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    &__background {
+      position: absolute;
+      right: 0;
+      width: 320px;
+      height: 124px;
+    }
+    &__image {
+      width: 481px;
+    }
+  }
+}
+
+.rent {
+  margin-top: 728px;
+  &__h2 {
+    color: $f-c;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: 0.006em;
+    margin-bottom: 40px;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    height: 1080px;
+    gap: 2%;
+  }
+  &__card {
+    position: relative;
+    max-width: 584px;
+    max-height: 524px;
+  }
+  &__img {
+    position: absolute;
+    z-index: -5;
+    width: 100%;
+  }
+  &__card-h2 {
+    
+    color: $f-c;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.006em;
+    margin: 48px 0 0 48px;
+  }
+  &__p-right {
+    display: flex;
+    gap: 20px;
+    align-items: end;
+  }
+  &__card-p {
+    color: $f-c;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.006em;
+  }
+  &__right {
+    width: 12px;
+    height: 12px;
+    border-right: 3px solid $right;
+    border-bottom: 3px solid $right;
+    transform: rotate(-45deg) translateY(-50%);
+    margin-bottom: 7px;
+  }
+}
+
+.our {
+  margin-top: 120px;
+  &__h2 {
+    color: $f-c;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 64px;
+    letter-spacing: 0.006em;
+    margin-bottom: 66px;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 33.333%);
+    grid-template-rows: repeat(100%);
+    gap: 24px;
+  }
+  &__card {
+    max-width: 384px;
+  }
+  &__card-img {
+    margin-bottom: 24px;
+    width: 100%;
+  }
+  &__card-h2 {
+    color: $f-c;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.006em;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-bottom: 16px;
+  }
+  &__card-p {
+    color: $f-c;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.006em;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+}
+
+.popular {
+  &__box-h2 {
+    display: flex;
+    justify-content: center;
+  }
+  &__h2 {
+    color: $f-c;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    text-align: center;
+    max-width: 591px;
+    margin: 120px 0px 40px 0px;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 33.333%);
+    grid-template-rows: repeat(2, 50%);
+    row-gap: 20px;
+    gap: 8px;
+  }
+  &__card {
+    background-color: $b-c;
+    max-width: 384px;
+    max-height: 472px;
+    color: $f-c;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__card-h2 {
+    color: $f-c;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.006em;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 24px 0 10px 24px;
+  }
+  &__card-p {
+    margin: 0 0 25px 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.0041em;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  &__car-price {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15.75px;
+    margin: 0 0 17px 24px;
+  }
+  &__price {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.0041em;
+    color: #ffffff;
+  }
+  &__p-orange {
+    color: $btn-c;
+    margin: 0 0 24px 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.0041em;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+}
+
+@media (max-width:830px) {
+  .popular {
+    &__cards {
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(3, 33.333%);
+    }
+  }
+}
