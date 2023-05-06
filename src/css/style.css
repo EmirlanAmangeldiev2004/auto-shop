@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -84,6 +83,11 @@ a {
   line-height: 24px;
   letter-spacing: 0.01em;
 }
+.header__nav-a:hover {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+  transition: 0.3s;
+}
 .header__nav-button {
   background-color: #ee8313;
   color: #fff;
@@ -92,6 +96,9 @@ a {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.01em;
+}
+.header__nav-button:hover {
+  background-color: #ffcc2c;
 }
 
 @media (max-width: 960px) {
@@ -352,6 +359,9 @@ a {
   flex-grow: 0;
 }
 
+.popular {
+  margin-bottom: 162px;
+}
 .popular__box-h2 {
   display: flex;
   justify-content: center;
@@ -437,4 +447,106 @@ a {
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(3, 33.333%);
   }
+}
+.location {
+  margin-bottom: 102px;
+}
+.location__h2 {
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: 0.006em;
+  margin-bottom: 40px;
+}
+.location__box-iframe {
+  max-width: 1200px;
+  height: 524px;
+}
+.location__iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.footer__main {
+  background-color: #1f1905;
+}
+.footer__main-box {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__logo-text {
+  max-width: 235px;
+}
+.footer__logo {
+  margin: 40px 0 64px 0;
+  display: flex;
+  align-items: center;
+}
+.footer__logo-img {
+  margin-right: 17px;
+}
+.footer__logo-p {
+  color: #fff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+}
+.footer__text {
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+.footer__menu {
+  margin: 75px 0 61px 0;
+  display: flex;
+  gap: 67px;
+  align-items: center;
+}
+.footer__menu-h2 {
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  padding-bottom: 4px;
+}
+.footer__menu-p {
+  margin-top: 28px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  opacity: 0.8;
+}
+.footer__social-net {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.footer__net {
+  display: block;
+}
+.footer__fyi-icon {
+  width: 50px;
+  height: 50px;
+}
+.footer__foot {
+  background-color: #ee8313;
+  padding: 20px 0;
+}
+.footer__right {
+  color: #fff;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
 }/*# sourceMappingURL=style.css.map */

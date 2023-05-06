@@ -5,6 +5,7 @@ $f-c: #fff;
 $btn-c: #ee8313;
 $right: #ffcc2c;
 $b-c: rgba(52, 52, 52, 0.3);
+$b-c-1: #1f1905;
 
 .header {
   &__menu > .container {
@@ -72,6 +73,11 @@ $b-c: rgba(52, 52, 52, 0.3);
     line-height: 24px;
     letter-spacing: 0.01em;
   }
+  &__nav-a:hover {
+    padding-bottom: 5px;
+    border-bottom: 1px solid $f-c;
+    transition: .3s;
+  }
   &__nav-button {
     background-color: $btn-c;
     color: $f-c;
@@ -80,6 +86,9 @@ $b-c: rgba(52, 52, 52, 0.3);
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.01em;
+  }
+  &__nav-button:hover {
+    background-color: #ffcc2c;
   }
 }
 
@@ -286,7 +295,6 @@ $b-c: rgba(52, 52, 52, 0.3);
     width: 100%;
   }
   &__card-h2 {
-    
     color: $f-c;
     font-style: normal;
     font-weight: 600;
@@ -369,6 +377,7 @@ $b-c: rgba(52, 52, 52, 0.3);
 }
 
 .popular {
+  margin-bottom: 162px;
   &__box-h2 {
     display: flex;
     justify-content: center;
@@ -450,11 +459,116 @@ $b-c: rgba(52, 52, 52, 0.3);
   }
 }
 
-@media (max-width:830px) {
+@media (max-width: 830px) {
   .popular {
     &__cards {
       grid-template-columns: repeat(2, 50%);
       grid-template-rows: repeat(3, 33.333%);
     }
+  }
+}
+
+.location {
+  margin-bottom: 102px;
+  &__h2 {
+    color: $f-c;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: 0.006em;
+    margin-bottom: 40px;
+  }
+  &__box-iframe {
+    max-width: 1200px;
+    height: 524px;
+  }
+  &__iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.footer {
+  &__main {
+    background-color: $b-c-1;
+  }
+  &__main-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo-text {
+    max-width: 235px;
+  }
+  &__logo {
+    margin: 40px 0 64px 0;
+    display: flex;
+    align-items: center;
+  }
+  &__logo-img {
+    margin-right: 17px;
+  }
+  &__logo-p {
+    color: $f-c;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+  }
+  &__text {
+    color: $f-c;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  &__menu {
+    margin: 75px 0 61px 0;
+    display: flex;
+    gap: 67px;
+    align-items: center;
+  }
+  &__menu-h2 {
+    color: $f-c;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    padding-bottom: 4px;
+  }
+  &__menu-p {
+    margin-top: 28px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $f-c;
+    opacity: 0.8;
+  }
+  &__social-net {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  &__net {
+    display: block;
+  }
+  &__fyi-icon {
+    width: 50px;
+    height: 50px;
+  }
+  &__foot {
+    background-color: $btn-c;
+    padding: 20px 0;
+  }
+  &__right {
+    color: $f-c;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
   }
 }
